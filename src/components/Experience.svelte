@@ -1,5 +1,19 @@
+<script>
+
+import { fade } from 'svelte/transition'
+  let hide = false;
+  const show = () => {
+    hide = !hide
+  }
+
+</script>
+
 <main>
-  <h1>Experience</h1>
+  <h1 >Experience</h1>
+  <p on:click={show}>Show content</p>
+  {#if hide}
+  <p in:fade out:fade hide={hide}>something</p>
+  {/if}
 </main>
 
 <style>

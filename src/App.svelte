@@ -5,19 +5,18 @@
 	import Experience from './components/Experience.svelte'
 	import Interests from './components/Interests.svelte'
 	import Eivind from './components/Eivind.svelte'
-	// import SideNav from './components/SideNav.svelte'
-	// import MenuItems from './components/MenuItems.svelte'
+	import { fade } from 'svelte/transition'
 
 	export let url = "";
 </script>
 <Router url='{url}'>
 	<Header />
-	<nav class='side-nav'>
+	<nav in:fade class='side-nav'>
 		<div>
-			<Link to='/'><p class='menu-items'>Eivind</p></Link>
-			<Link to='education'><p class='menu-items'>Education</p></Link>
-			<Link to='experience'><p class='menu-items'>Experience</p></Link>
-			<Link to='interests'><p class='menu-items'>Interests</p></Link>
+			<Link to='/'><p class='menu-items'>eivind pham</p></Link>
+			<Link to='education'><p class='menu-items'>education</p></Link>
+			<Link to='experience'><p class='menu-items'>experience</p></Link>
+			<Link to='interests'><p class='menu-items'>interests</p></Link>
 		</div>
 	</nav>
 	<div class='link' >
@@ -71,8 +70,16 @@ h1 {
     letter-spacing: .1rem;
     cursor: pointer;
     margin-left: 2rem;
+		margin-right: 2rem;
 		text-decoration: none;
+		justify-self: center;
+		transition: 0.1s;
   }
+
+	.menu-items:hover {
+		margin-left: 2.5rem;
+		text-decoration: none;
+	}
 	
 
 </style>
