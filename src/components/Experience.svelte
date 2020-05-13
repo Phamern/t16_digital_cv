@@ -12,7 +12,7 @@ import { fade } from 'svelte/transition'
   <h1 >Experience</h1>
   <p on:click={show}>Show content</p>
   {#if hide}
-  <p in:fade out:fade hide={hide}>something</p>
+    <p in:fade out:fade hide={hide}>something</p>
   {/if}
 </main>
 
@@ -21,10 +21,15 @@ import { fade } from 'svelte/transition'
     width: 100vw;
     height: 100vh;
     display: grid;
+    grid-template-columns: 1fr 1fr;
     place-items: center;
   }
 
   h1 {
     font-size: 10rem;
+  }
+
+  p {
+    cursor: pointer;
   }
 </style>

@@ -19,16 +19,13 @@
 			<Link to='interests'><p class='menu-items'>interests</p></Link>
 		</div>
 	</nav>
-	<div class='link' >
+	<div>
+		<Route path='/'><Eivind /></Route>
 		<Route path='education' component='{Education}' />
 		<Route path='/experience' component='{Experience}' />
 		<Route path='/interests' component='{Interests}' />
 	</div>
 </Router>
-
-	<main>
-		<h1>Eivind</h1>
-	</main>
 
 <style>
 
@@ -51,17 +48,6 @@
 	display: grid;
 	place-items: center;
 }
-main {
-	height: 100vh;
-	width: 100vw;
-	display: grid;
-	place-items: center;
-}
-h1 {
-	font-size: 10rem;
-	color: white; 
-}
-
 .menu-items {
     color: #fff;
     font-family: 'Eczar', serif;
@@ -80,6 +66,5 @@ h1 {
 		margin-left: 2.5rem;
 		text-decoration: none;
 	}
-	
 
 </style>
