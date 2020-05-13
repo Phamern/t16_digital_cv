@@ -1,22 +1,20 @@
 <script>
-	export let name;
+	import Header from './components/Header.svelte'
+	import SideNav from './components/SideNav.svelte'
+	import MenuItems from './components/MenuItems.svelte'
 </script>
 
-<main>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+	<Header />
+	<MenuItems />
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
+:global(*) {
+	box-sizing: border-box;
+}
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+:global(html, body, main, h1) {
+	margin: 0;
+	padding: 0;
+	background-color: #1a1a1a;
+}
 </style>
