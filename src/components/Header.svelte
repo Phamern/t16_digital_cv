@@ -14,6 +14,8 @@
 
 header {
   display: grid;
+  top: 0;
+  left: 0;
   grid-template-columns: 1fr 1fr 1fr;
   position: fixed;
   height: 100px;

@@ -12,6 +12,7 @@
 <Router url='{url}'>
 	<Header />
 	<nav in:fade class='side-nav'>
+	<img class='profile-image' src="img/profil-image.jpg" alt="profile">
 		<div>
 			<Link to='/'><p class='menu-items'>eivind pham</p></Link>
 			<Link to='education'><p class='menu-items'>education</p></Link>
@@ -39,10 +40,11 @@
 	background-color: #1a1a1a;
 }
 
+
 .side-nav {
 	width: 300px;
 	height: 100vh;
-	margin-top: 100px;
+	margin-top: 10vh;
 	background-color: #1a1a1a;
 	position: fixed;
 	display: grid;
@@ -51,8 +53,8 @@
 .menu-items {
     color: #fff;
     font-family: 'Eczar', serif;
-    font-size: 1.5rem;
-    font-weight: 100;
+		font-size: 2rem;
+		font-weight: 400;
     letter-spacing: .1rem;
     cursor: pointer;
     margin-left: 2rem;
@@ -63,8 +65,13 @@
   }
 
 	.menu-items:hover {
-		margin-left: 2.5rem;
+		transform: translateX(.5rem);
 		text-decoration: none;
+	}
+
+	.profile-image {
+		width: 200px;
+		border-radius: 50%;
 	}
 
 </style>
