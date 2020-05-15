@@ -50,7 +50,7 @@
 
 :global(h2) {
 	font-family: 'Eczar';
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 :global(.main-categories) {
@@ -62,6 +62,7 @@
 :global(p) {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+		font-size: 1.2rem;
 }
 
 .side-nav {

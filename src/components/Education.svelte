@@ -1,60 +1,103 @@
 <script>
+  import { fly, fade } from "svelte/transition";
+  import { data } from "../data/data.js";
 
-import { fly } from 'svelte/transition'
-import { educations } from '../data/education.js'
+  let show = false;
+  let showText = 'Show';
 
+  const showDetail = (i) => {
+    if( i === show) {
+      show = false;
+      // showText = 'Show'
+
+    } else {
+      show = i 
+      // showText = 'Hide'
+    }
+  }
+
+  const hideText = (i) => {
+    if(i === showText) {
+      showtext = 'Hide'
+    } else {
+      showText = i
+      showText = 'Show'
+    }
+  }
 </script>
 
-<main class='main-categories'>
-  <h1 class='title title-education'>Education</h1>
+
+<main class="main-categories">
+  <h1 class="title title-education">Education</h1>
+
   <section class="info-groups">
-  <div transition:fly={{y:200, duration: 1500}} class="interaction-design">
-    <h2 class="degree">Interaction Design</h2>
-    <div class="grade-info">
-      <p class="year">{$educations.year}</p>
-      <p class="school">{$educations.school}</p>
-      <p class="more-details">More details</p>
-    </div>
-  </div>
-  <div transition:fly={{y:200, duration: 2500}} class="graphic-design">
-    <h2 class="degree">Graphic Design</h2>
-    <div class="grade-info">
-      <p class="year">Aug 2018 - Jun 2020</p>
-      <p class="school">Fagskolen Kristiania, Norway</p>
-      <p class="more-details">More details</p>
-    </div>
-  </div>
-  <div transition:fly={{y:200, duration: 3500}} class="fhs">
-    <h2 class="degree">Graphic Design & street art</h2>
-    <div class="grade-info">
-      <p class="year">Sept 2013 - Jun 2014</p>
-      <p class="school">Skjeberg folkehøyskole, Norway</p>
-      <p class="more-details">More details</p>
-    </div>
-  </div>
+    {#each data.educationHistory as education, i}
+      <div transition:fly={{ y: 200, duration: 1500 }} class="interaction-design">
+        <div class="interaction-design">
+          <h2 class="degree">{education.field}</h2>
+          <div class="grade-info">
+            <p class="year">{education.year}</p>
+            <p class="school">{education.school}</p>
+            <div class='show-details-group'>
+              <p class='show-details' on:click={() => showDetail(i)} on:click={() => hideText(i)}>{showText} details</p>
+              <img class:active={show === i} class='arrow' src="../img/arrow.png" alt="arrow">
+            </div>
+              {#if i === show}
+                {#each education.details as detail}
+                  <li transition:fade={{duration: 1000}}>{detail.hei}</li>
+                  <li transition:fade={{duration: 1000}}>{detail.heisann}</li>
+                  <li transition:fade={{duration: 1000}}>{detail.d}</li>
+                  <li transition:fade={{duration: 1000}}>{detail.c}</li>
+                {/each}
+              {/if}
+          </div>
+        </div>
+      </div>
+    {/each}
   </section>
-  
 </main>
 
+
 <style>
-
-.main-categories {
-  height: 70vh;
-  width: 80vw;
-  margin-left: 15vw;
-  place-items: center;
-}
-.info-groups {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5rem;
-}
-
-@media (max-width: 900px) {
-  .info-groups {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
+  .main-categories {
+    width: 80vw;
+    margin-left: 15vw;
+    place-items: center;
   }
-}
+  .info-groups {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
 
+  .active {
+    transform: rotate(180deg);
+    transition: 1s;
+  }
+
+  .arrow {
+    width: 15px;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+  }
+
+  .show-details {
+    cursor: pointer;
+  }
+
+  .show-details-group {
+    height: 20px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 900px) {
+    .info-groups {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+    }
+  }
 </style>
