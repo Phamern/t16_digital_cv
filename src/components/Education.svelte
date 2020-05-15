@@ -84,10 +84,16 @@
   li {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1rem;
   }
 
+ @media (max-width: 1200px) {
+    .info-groups {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
   @media (max-width: 900px) {
     .info-groups {
       grid-template-columns: repeat(1, 1fr);
