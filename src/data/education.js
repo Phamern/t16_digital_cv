@@ -1,16 +1,22 @@
-const education = [
-  {
-    id: interaction,
-    year: 'Aug 2018 - Jun 2020',
-    school: 'Fagskolen Kristiania',
-    skillset: ['Web development', 'UX', 'UI']
-  },
-  {
-    id: graphic,
-    year: 'Aug 2015 - Jun 2017',
-    school: 'Fagskolen Kristiania',
-    skillset: ['Concept development', 'adobe']
-  },
-]
+import { writable } from 'svelte/store'
 
-export default education
+// export let educations = writable({
+//   "interaction": {
+//     'id': 1,
+//     'year': 'Aug 2018 - Jun 2020',
+//     'school': 'Fagskolen Kristiania',
+//   },
+//   "graphic": {
+//     'id': 2,
+//     'year': 'Aug 2015 - Jun 2017',
+//     'school': 'Fagskolen Kristiania',
+//   }
+// })
+
+
+export const educations = writable({
+    id: 1,
+    year: 'Aug 2018 - Jun 2020',
+    school: 'Fagskolen Kristiania, Norway'
+})
+

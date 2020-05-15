@@ -8,6 +8,7 @@
 	import { fade } from 'svelte/transition'
 
 	export let url = "";
+
 </script>
 <Router url='{url}'>
 	<Header />
@@ -22,7 +23,7 @@
 	</nav>
 	<div>
 		<Route path='/'><Eivind /></Route>
-		<Route path='education' component='{Education}' />
+		<Route path='education' component='{Education}'/>
 		<Route path='/experience' component='{Experience}' />
 		<Route path='/interests' component='{Interests}' />
 	</div>
@@ -38,11 +39,33 @@
 	margin: 0;
 	padding: 0;
 	background-color: #1a1a1a;
+	color: #fff;
 }
 
+:global(.title) {
+	font-family: 'Eczar', serif;
+	font-size: 2.5rem;
+	margin-top: 15vh;
+}
+
+:global(h2) {
+	font-family: 'Eczar';
+	font-size: 1.5rem;
+}
+
+:global(.main-categories) {
+    width: 100vw;
+    display: grid;
+		justify-content: center;
+}
+
+:global(p) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
 
 .side-nav {
-	width: 300px;
+	width: 20vw;
 	height: 100vh;
 	margin-top: 10vh;
 	background-color: #1a1a1a;
@@ -50,6 +73,7 @@
 	display: grid;
 	place-items: center;
 }
+
 .menu-items {
     color: #fff;
     font-family: 'Eczar', serif;
