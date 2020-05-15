@@ -1,5 +1,6 @@
 <script>
   import { fly, fade } from "svelte/transition";
+  import { quintOut } from 'svelte/easing';
   import { data } from "../data/data.js";
 
   let show = false;
@@ -8,51 +9,38 @@
   const showDetail = (i) => {
     if( i === show) {
       show = false;
-      // showText = 'Show'
 
     } else {
       show = i 
-      // showText = 'Hide'
-    }
-  }
-
-  const hideText = (i) => {
-    if(i === showText) {
-      showtext = 'Hide'
-    } else {
-      showText = i
-      showText = 'Show'
     }
   }
 </script>
 
 
-<main class="main-categories">
+<main in:fly={{ y: 200, duration: 1500, delay: 500}} out:fade={{duration: 10}} class="main-categories">
   <h1 class="title title-education">Education</h1>
 
   <section class="info-groups">
     {#each data.educationHistory as education, i}
-      <div transition:fly={{ y: 200, duration: 1500 }} class="interaction-design">
         <div class="interaction-design">
           <h2 class="degree">{education.field}</h2>
           <div class="grade-info">
             <p class="year">{education.year}</p>
             <p class="school">{education.school}</p>
             <div class='show-details-group'>
-              <p class='show-details' on:click={() => showDetail(i)} on:click={() => hideText(i)}>{showText} details</p>
+              <p class='show-details' on:click={() => showDetail(i)}>{showText} details</p>
               <img class:active={show === i} class='arrow' src="../img/arrow.png" alt="arrow">
             </div>
               {#if i === show}
                 {#each education.details as detail}
-                  <li transition:fade={{duration: 1000}}>{detail.hei}</li>
-                  <li transition:fade={{duration: 1000}}>{detail.heisann}</li>
-                  <li transition:fade={{duration: 1000}}>{detail.d}</li>
-                  <li transition:fade={{duration: 1000}}>{detail.c}</li>
+                  <li transition:fade={{duration: 500}}>{detail.a}</li>
+                  <li transition:fade={{duration: 500}}>{detail.b}</li>
+                  <li transition:fade={{duration: 500}}>{detail.c}</li>
+                  <li transition:fade={{duration: 500}}>{detail.d}</li>
                 {/each}
               {/if}
           </div>
         </div>
-      </div>
     {/each}
   </section>
 </main>
@@ -69,7 +57,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
   }
-
   .active {
     transform: rotate(180deg);
     transition: 1s;
@@ -92,6 +79,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 2rem;
+  }
+
+  li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    padding: 1rem;
   }
 
   @media (max-width: 900px) {

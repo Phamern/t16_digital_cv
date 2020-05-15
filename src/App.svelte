@@ -10,6 +10,11 @@
 	export let url = "";
 
 </script>
+
+<svelte:head>
+		<link href="https://fonts.googleapis.com/css2?family=Eczar&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+</svelte:head>
+
 <Router url='{url}'>
 	<Header />
 	<nav in:fade class='side-nav'>
@@ -68,7 +73,6 @@
 .side-nav {
 	width: 20vw;
 	height: 100vh;
-	margin-top: 10vh;
 	background-color: #1a1a1a;
 	position: fixed;
 	display: grid;
