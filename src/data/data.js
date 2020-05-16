@@ -22,33 +22,39 @@ export const data = {
     experienceHistory: [
       {
         job: 'Designit',
-        role: 'Internship',
+        role: 'Digital Design Intern',
         year: 'march - may 2020',
-        details:  [{a: '2 year degree', b:'UX', c:'Digital Design', d: 'Front-end development'}]
+        details:  [{a: 'Digital Design', b:'Team collaboration', c:'Sketch'}]
       },
       {
         job: 'Degree Consulting',
-        role: 'Internship',
-        year: 'march - may 2020',
-        details:  [{a: '2 year degree', b:'UX', c:'Digital Design', d: 'Front-end development'}]
+        role: 'Junior Digital Designer',
+        year: 'may - aug 2019',
+        details:  [{a: 'Part time', b:'Design Manual', c:'Icon & illustration'}]
       },
       {
         job: 'Brilleland',
-        role: 'Internship',
-        year: 'Nov 2018 - April 2019',
-        details:  [{a: '2 year degree', b:'UX', c:'Digital Design', d: 'Front-end development'}]
+        role: 'Shop worker',
+        year: 'Nov 2018 - Apr 2019',
+        details:  [{a: 'Part time', b:'Sales', c:'Maintenance'}]
       },
       {
         job: 'Posten As',
-        role: 'Internship',
-        year: 'march - may 2020',
-        details:  [{a: '2 year degree', b:'UX', c:'Digital Design', d: 'Front-end development'}]
+        role: 'Postal Worker',
+        year: 'Aug 2017 - Aug 2018',
+        details:  [{a: 'Temporary', b:'Nightshift', c:'Sorting'}]
       },
       {
-        job: 'Steinerskolen i kristiansand',
-        role: 'Internship',
-        year: 'march - may 2020',
-        details:  [{a: '2 year degree', b:'UX', c:'Digital Design', d: 'Front-end development'}]
+        job: 'Steinerskolen',
+        role: 'Assistent',
+        year: 'Sept 2014 - Jun 2015',
+        details:  [{a: 'Part time 80%', b:'Special ed', c:'Elementary school'}]
+      },
+      {
+        job: 'Cinemateket',
+        role: 'Shop worker',
+        year: 'Nov 2014 - Jun 2015',
+        details:  [{a: 'Voluntary', b:'Movies', c:'Maintenance'}]
       },
     ]
   };

@@ -1,6 +1,11 @@
 <script>
+import SideNav from './SideNav.svelte'
 
+// let show = false;
 
+// const showMenu = () => {
+//   show = !show
+// }
 </script>
 
 <header>
@@ -8,20 +13,23 @@
   <h1 class='header-title'>
     Curriculum Vitae
   </h1>
+  <div class='burger-menu'>hei</div>
 </header>
-
+  <!-- {#if show}
+    <SideNav />
+  {/if} -->
 <style>
-
 header {
   display: grid;
   top: 0;
   left: 0;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr auto 1fr;
   position: fixed;
-  height: 100px;
+  height: 15vh;
   width: 100vw;
   background-color: #1a1a1a;
-  z-index: 1;
+  z-index: 2;
+  place-items: center;
 }
 
 .header-title {
@@ -30,13 +38,23 @@ header {
   letter-spacing: .5rem;
   font-size: 1.5rem;
   color: #fff;
-  justify-self: center;
-  padding: 2rem;
 }
-
-
 .header-logo {
   height: 40px;
   margin: 2rem;
+  justify-self: left;
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .header-title {
+    font-size: 1rem;
+  }
+  .burger-menu {
+    display: grid;
+  }
 }
 </style>

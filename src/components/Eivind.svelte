@@ -17,7 +17,7 @@
 
 
 <main in:fly={{ y: 200, duration: 1500, delay: 500}} out:fade={{duration: 10}} class="main-categories">
-  <h1 class="title title-education">Eivind</h1>
+  <h1 class="title title-education">This is me</h1>
 
   <section class="info-groups">
     {#each data.educationHistory as education, i}
@@ -32,10 +32,10 @@
             </div>
               {#if i === show}
                 {#each education.details as detail}
-                  <li transition:fade={{duration: 1000}}>{detail.hei}</li>
-                  <li transition:fade={{duration: 1000}}>{detail.heisann}</li>
-                  <li transition:fade={{duration: 1000}}>{detail.d}</li>
+                  <li transition:fade={{duration: 1000}}>{detail.a}</li>
+                  <li transition:fade={{duration: 1000}}>{detail.b}</li>
                   <li transition:fade={{duration: 1000}}>{detail.c}</li>
+                  <li transition:fade={{duration: 1000}}>{detail.d}</li>
                 {/each}
               {/if}
           </div>
@@ -48,9 +48,14 @@
 <style>
   .main-categories {
     width: 80vw;
-    margin-left: 15vw;
+    margin-left: 20vw;
     place-items: center;
   }
+
+  .title-education {
+    justify-self: left;
+  }
+
   .info-groups {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -94,10 +99,12 @@
       gap: 2rem;
     }
   }
+
   @media (max-width: 900px) {
     .info-groups {
       grid-template-columns: repeat(1, 1fr);
       gap: 2rem;
     }
   }
+  
 </style>

@@ -1,7 +1,7 @@
 <script>
   import { fly, fade } from "svelte/transition";
-  import { quintOut } from 'svelte/easing';
   import { data } from "../data/data.js";
+  import Details from './Details.svelte'
 
   let show = false;
   let showText = 'Show';
@@ -11,7 +11,7 @@
       show = false;
 
     } else {
-      show = i 
+      show = i
     }
   }
 </script>
@@ -27,18 +27,9 @@
           <div class="grade-info">
             <p class="year">{education.year}</p>
             <p class="school">{education.school}</p>
-            <div class='show-details-group'>
-              <p class='show-details' on:click={() => showDetail(i)}>{showText} details</p>
-              <img class:active={show === i} class='arrow' src="../img/arrow.png" alt="arrow">
-            </div>
-              {#if i === show}
                 {#each education.details as detail}
-                  <li transition:fade={{duration: 500}}>{detail.a}</li>
-                  <li transition:fade={{duration: 500}}>{detail.b}</li>
-                  <li transition:fade={{duration: 500}}>{detail.c}</li>
-                  <li transition:fade={{duration: 500}}>{detail.d}</li>
+                <Details detail={detail} type='education'/>
                 {/each}
-              {/if}
           </div>
         </div>
     {/each}
@@ -49,55 +40,32 @@
 <style>
   .main-categories {
     width: 80vw;
-    margin-left: 15vw;
+    margin-left: 20vw;
     place-items: center;
   }
+
+  .title-education {
+    justify-self: left;
+  }
+
   .info-groups {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
   }
-  .active {
-    transform: rotate(180deg);
-    transition: 1s;
-  }
 
-  .arrow {
-    width: 15px;
-    color: white;
-    transition: .5s;
-    cursor: pointer;
-  }
-
-  .show-details {
-    cursor: pointer;
-  }
-
-  .show-details-group {
-    height: 20px;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 2rem;
-  }
-
-  li {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 1rem;
-    padding: 1rem;
-  }
-
- @media (max-width: 1200px) {
+  @media (max-width: 1200px) {
     .info-groups {
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
     }
   }
+
   @media (max-width: 900px) {
     .info-groups {
       grid-template-columns: repeat(1, 1fr);
       gap: 2rem;
     }
   }
+  
 </style>
