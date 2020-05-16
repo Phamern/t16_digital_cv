@@ -27,7 +27,7 @@ header {
   position: fixed;
   height: 15vh;
   width: 100vw;
-  background-color: #1a1a1a;
+  background-color: #161616;
   z-index: 2;
   place-items: center;
 }

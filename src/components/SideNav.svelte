@@ -41,7 +41,7 @@
 	width: 20vw;
 	height: 90vh;
 	margin-top: 15vh; 
-	background-color: #1a1a1a;
+	background-color: #161616;
 	position: fixed;
 	display: grid;
 	place-items: center;
@@ -75,7 +75,7 @@
 	.side-nav {
 		width: 100vw;
 		height: 100vh;
-		background-color: #1a1a1a;
+		background-color: #161616;
 		position: fixed;
 		display: grid;
 		grid-template-rows: repeat(5, 1fr);

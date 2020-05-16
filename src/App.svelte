@@ -20,7 +20,7 @@
 :global(html, body, main, h1) {
 	margin: 0;
 	padding: 0;
-	background-color: #1a1a1a;
+	background-color: #161616;
 	color: #fff;
 }
 
