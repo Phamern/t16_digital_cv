@@ -8,17 +8,16 @@
 
 
 <main in:fly={{ y: 200, duration: 1500, delay: 500}} out:fade={{duration: 10}} class="main-categories">
-  <h1 class="title title-education">Experience</h1>
-
+  <h1 class="title title-experience">Experience</h1>
   <section class="info-groups">
     {#each data.experienceHistory as experience, i}
         <div class="interaction-design">
           <h2 class="degree">{experience.job}</h2>
           <div class="grade-info">
-            <p class="year">{experience.year}</p>
             <p class="school">{experience.role}</p>
+            <p class="year">{experience.year}</p>
                 {#each experience.details as detail}
-                  <Details detail={detail}/>
+                  <Details detail={detail} type='experience' />
                 {/each}
           </div>
         </div>
@@ -30,18 +29,20 @@
 <style>
   .main-categories {
     width: 80vw;
-    margin-left: 25vw;
-    margin-right: 25vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
   }
 
   .info-groups {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+    grid-template-columns: repeat(3, 20vw);
+    gap: 3rem;
+    margin-left: 5rem;
   }
 
-  .title-education {
+  .title-experience {
     justify-self: left;
+    margin-left: 5rem;
   }
 
   @media (min-width: 1600px) {

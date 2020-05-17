@@ -5,6 +5,7 @@
 	import Experience from './Experience.svelte'
 	import Interests from './Interests.svelte'
 	import Eivind from './Eivind.svelte'
+	import ContactInfo from './ContactInfo.svelte'
 	import { fade } from 'svelte/transition'
 
 	export let url = "";
@@ -13,12 +14,12 @@
 
 <Router url='{url}'>
 	<nav in:fade class='side-nav'>
-	<img class='profile-image' src="img/profil-image.jpg" alt="profile">
 		<div>
-			<Link to='/'><p class='menu-items'>eivind pham</p></Link>
+			<Link to='/'><p class='menu-items'>about me</p></Link>
 			<Link to='education'><p class='menu-items'>education</p></Link>
 			<Link to='experience'><p class='menu-items'>experience</p></Link>
 			<Link to='interests'><p class='menu-items'>interests</p></Link>
+			<!-- <Link to='contact'><p class='menu-items'>contact</p></Link> -->
 		</div>
 	</nav>
 	<div>
@@ -26,6 +27,7 @@
 		<Route path='education' component='{Education}'/>
 		<Route path='/experience' component='{Experience}' />
 		<Route path='/interests' component='{Interests}' />
+		<!-- <Route path='/contact' component='{ContactInfo}' /> -->
 	</div>
 </Router>
 
@@ -39,6 +41,7 @@
 	position: fixed;
 	display: grid;
 	place-items: center;
+	border-right: 1px solid #2e2e2e;
 }
 
 .menu-items {
@@ -53,6 +56,7 @@
 		text-decoration: none;
 		justify-self: center;
 		transition: 0.1s;
+		
   }
 
 	.menu-items:hover {
@@ -60,11 +64,12 @@
 		text-decoration: none;
 	}
 
-	.profile-image {
-		width: 200px;
-		border-radius: 50%;
+@media (max-width: 1300px){
+	.menu-items {
+		font-size: 1.5rem;
 	}
-
+	
+}
 @media (max-width: 900px){
 	.side-nav {
 		width: 100vw;

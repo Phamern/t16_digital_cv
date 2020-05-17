@@ -65,13 +65,13 @@ export const data = {
         details:  [{a: 'Kung fu', b:'mindfullness', c:'training'}]
       },
       {
-        name: 'Music',
+        name: 'Music discovering',
         role: 'Junior Digital Designer',
         year: 'may - aug 2019',
-        details:  [{a: 'Part time', b:'Design Manual', c:'Icon & illustration'}]
+        details:  [{a: 'Listening', b:'Guitar', c:'Moodbased'}]
       },
       {
-        job: 'Brilleland',
+        name: 'Walking',
         role: 'Shop worker',
         year: 'Nov 2018 - Apr 2019',
         details:  [{a: 'Part time', b:'Sales', c:'Maintenance'}]
@@ -94,6 +94,15 @@ export const data = {
         year: 'Nov 2014 - Jun 2015',
         details:  [{a: 'Voluntary', b:'Movies', c:'Maintenance'}]
       },
+    ],
+    contactInfo: [
+      {
+        birth: '27.06.1994',
+        adress: 'Tollbugata 13, 0152 Oslo, Norway',
+        phone: '908 96 870',
+        email: 'eivindmpham@gmail.com',
+        website: 'eivindpham.no'
+      }
     ]
   };
 

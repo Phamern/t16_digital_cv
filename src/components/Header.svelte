@@ -37,7 +37,7 @@ header {
 }
 
 @media (max-width: 900px) {
-  
+
   .header-title {
     font-size: 1rem;
   }

@@ -41,16 +41,19 @@
   .main-categories {
     width: 80vw;
     margin-left: 20vw;
+    padding: 0;
   }
 
   .title-education {
     justify-self: left;
+    margin-left: 5rem;
   }
 
   .info-groups {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
+    grid-template-columns: repeat(3, 22vw);
+    gap: 2rem;
+    margin-left: 5rem;
   }
 
   @media (max-width: 1200px) {
