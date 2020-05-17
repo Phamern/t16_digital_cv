@@ -32,7 +32,6 @@
     width: 80vw;
     margin-left: 25vw;
     margin-right: 25vw;
-    place-items: center;
   }
 
   .info-groups {
@@ -65,7 +64,7 @@
     }
     .main-categories {
     width: 80vw;
-    margin-left: 25vw;
+    margin-left: 5vw;
     place-items: center;
   }
   }

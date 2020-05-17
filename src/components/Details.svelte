@@ -40,11 +40,26 @@ const test = event => {
     transition: 1s;
   }
 
+  .show-details-group {
+    height: 20px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  .show-details {
+    cursor: pointer;
+  }
+
   .arrow {
     width: 15px;
     color: white;
     transition: .5s;
     cursor: pointer;
+    align-self: right;
+  
   }
  
   li {
@@ -54,18 +69,6 @@ const test = event => {
     padding-top: 1rem;
   }
 
-  .show-details {
-    cursor: pointer;
-  }
-
-
-  .show-details-group {
-    height: 20px;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 2rem;
-  }
 
 
  </style>

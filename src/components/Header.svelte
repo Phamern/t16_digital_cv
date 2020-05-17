@@ -1,11 +1,6 @@
 <script>
 import SideNav from './SideNav.svelte'
 
-// let show = false;
-
-// const showMenu = () => {
-//   show = !show
-// }
 </script>
 
 <header>
@@ -13,11 +8,7 @@ import SideNav from './SideNav.svelte'
   <h1 class='header-title'>
     Curriculum Vitae
   </h1>
-  <div class='burger-menu'>hei</div>
 </header>
-  <!-- {#if show}
-    <SideNav />
-  {/if} -->
 <style>
 header {
   display: grid;
@@ -45,16 +36,10 @@ header {
   justify-self: left;
 }
 
-.burger-menu {
-  display: none;
-}
-
 @media (max-width: 900px) {
+  
   .header-title {
     font-size: 1rem;
-  }
-  .burger-menu {
-    display: grid;
   }
 }
 </style>

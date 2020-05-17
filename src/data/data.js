@@ -21,13 +21,51 @@ export const data = {
     ],
     experienceHistory: [
       {
-        job: 'Designit',
+        job: 'Designit Oslo',
         role: 'Digital Design Intern',
         year: 'march - may 2020',
         details:  [{a: 'Digital Design', b:'Team collaboration', c:'Sketch'}]
       },
       {
-        job: 'Degree Consulting',
+        job: 'Degree Consulting Group',
+        role: 'Junior Digital Designer',
+        year: 'may - aug 2019',
+        details:  [{a: 'Part time', b:'Design Manual', c:'Icon & illustration'}]
+      },
+      {
+        job: 'Brilleland AS',
+        role: 'Shop worker',
+        year: 'Nov 2018 - Apr 2019',
+        details:  [{a: 'Part time', b:'Sales', c:'Maintenance'}]
+      },
+      {
+        job: 'Posten Norge As',
+        role: 'Postal Worker',
+        year: 'Aug 2017 - Aug 2018',
+        details:  [{a: 'Temporary', b:'Nightshift', c:'fast-paced environment'}]
+      },
+      {
+        job: 'Steinerskolen',
+        role: 'Assistent',
+        year: 'Sept 2014 - Jun 2015',
+        details:  [{a: 'Part time 80%', b:'Special ed', c:'Elementary school'}]
+      },
+      {
+        job: 'Cinemateket',
+        role: 'Cashier',
+        year: 'Nov 2014 - Jun 2015',
+        details:  [{a: 'Voluntary', b:'Movies', c:'Preparations'}]
+      },
+    ],
+    interests: [
+      {
+        name: 'Wing Chun',
+        role: 'Apprentice',
+        year: 'Aug 2019 - ',
+        details:  [{a: 'Kung fu', b:'mindfullness', c:'training'}]
+      },
+      {
+        name: 'Music',
         role: 'Junior Digital Designer',
         year: 'may - aug 2019',
         details:  [{a: 'Part time', b:'Design Manual', c:'Icon & illustration'}]

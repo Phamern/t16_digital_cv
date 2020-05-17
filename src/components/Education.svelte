@@ -41,7 +41,6 @@
   .main-categories {
     width: 80vw;
     margin-left: 20vw;
-    place-items: center;
   }
 
   .title-education {

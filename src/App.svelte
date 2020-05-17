@@ -6,6 +6,7 @@
 
 <svelte:head>
 		<link href="https://fonts.googleapis.com/css2?family=Eczar&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
 </svelte:head>
 
 	<Header />
@@ -22,10 +23,11 @@
 	padding: 0;
 	background-color: #161616;
 	color: #fff;
+	overflow-x: hidden;
 }
 
 :global(.title) {
-	font-family: 'Eczar', serif;
+	font-family: 'Yeseva One', cursive;
 	font-size: 2.5rem;
 	margin-top: 15vh;
 }

@@ -2,108 +2,54 @@
   import { fly, fade } from "svelte/transition";
   import { data } from "../data/data.js";
 
-  let show = false;
-  let showText = 'Show';
-
-  const showDetail = (i) => {
-    if( i === show) {
-      show = false;
-
-    } else {
-      show = i
-    }
-  }
 </script>
 
 
 <main in:fly={{ y: 200, duration: 1500, delay: 500}} out:fade={{duration: 10}} class="main-categories">
-  <h1 class="title title-education">This is me</h1>
-
-  <section class="info-groups">
-    {#each data.educationHistory as education, i}
-        <div class="interaction-design">
-          <h2 class="degree">{education.field}</h2>
-          <div class="grade-info">
-            <p class="year">{education.year}</p>
-            <p class="school">{education.school}</p>
-            <div class='show-details-group'>
-              <p class='show-details' on:click={() => showDetail(i)}>{showText} details</p>
-              <img class:active={show === i} class='arrow' src="../img/arrow.png" alt="arrow">
-            </div>
-              {#if i === show}
-                {#each education.details as detail}
-                  <li transition:fade={{duration: 1000}}>{detail.a}</li>
-                  <li transition:fade={{duration: 1000}}>{detail.b}</li>
-                  <li transition:fade={{duration: 1000}}>{detail.c}</li>
-                  <li transition:fade={{duration: 1000}}>{detail.d}</li>
-                {/each}
-              {/if}
-          </div>
-        </div>
-    {/each}
-  </section>
+  <h1 class="title title-eivind">This is me</h1>
+  <div class='info-group'>
+    <h2>My story</h2>
+    <div class="display-eivind-image">
+     <img class='display-image' src="img/profile-image-eivind.jpg" alt="display eivind">
+    </div>
+  </div>
 </main>
 
 
 <style>
-  .main-categories {
+
+   .main-categories {
     width: 80vw;
     margin-left: 20vw;
-    place-items: center;
+    margin-right: 25vw;
+    justify-content: left;
   }
 
-  .title-education {
+  .title {
     justify-self: left;
   }
 
-  .info-groups {
+  .info-group {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
+    /* grid-template-rows: repeat(2, 1fr); */
+    gap: 2rem;
+  }
+  
+  .display-eivind-image {
+    grid-column:  3;
+    /* grid-row: span 0 / 3; */
   }
 
-  .active {
-    transform: rotate(180deg);
-    transition: 1s;
-  }
-
-  .arrow {
-    width: 15px;
-    color: white;
-    transition: .5s;
-    cursor: pointer;
-  }
-
-  .show-details {
-    cursor: pointer;
-  }
-
-  .show-details-group {
-    height: 20px;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 2rem;
-  }
-
-  li {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 1rem;
-    padding: 1rem;
-  }
-
-  @media (max-width: 1200px) {
-    .info-groups {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
+  .display-image {
+    width: 30vw;
   }
 
   @media (max-width: 900px) {
-    .info-groups {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 2rem;
+    .main-categories {
+      width: 100vw;
+      margin: 0;
+      padding: 2rem;
     }
   }
   

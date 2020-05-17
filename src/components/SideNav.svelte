@@ -9,12 +9,6 @@
 
 	export let url = "";
 
-	// let open = false;
-
-	// const openMenu = () => {
-	// 	open = ! open
-	// }
-
 </script>
 
 <Router url='{url}'>
@@ -75,27 +69,8 @@
 	.side-nav {
 		width: 100vw;
 		height: 100vh;
-		background-color: #161616;
-		position: fixed;
-		display: grid;
-		grid-template-rows: repeat(5, 1fr);
-		place-items: center;
-		z-index: 1;
-		/* transform: translateX(100vh); */
+		position: relative;
+		grid-template-rows: repeat(3, 1fr);
 	}
-
-	.menu-items {
-    color: #fff;
-    font-family: 'Eczar', serif;
-		font-size: 2rem;
-		font-weight: 400;
-    letter-spacing: .1rem;
-    cursor: pointer;
-    margin-left: 2rem;
-		margin-right: 2rem;
-		text-decoration: none;
-		justify-self: center;
-		transition: 0.1s;
-  }
 }
 </style>

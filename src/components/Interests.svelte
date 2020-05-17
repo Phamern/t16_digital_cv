@@ -1,16 +1,71 @@
-<main>
-  <h1>Interests</h1>
+<script>
+  import { fly, fade } from "svelte/transition";
+  import { quintOut } from 'svelte/easing';
+  import { data } from "../data/data.js";
+  import Details from './Details.svelte'
+
+</script>
+
+
+<main in:fly={{ y: 200, duration: 1500, delay: 500}} out:fade={{duration: 10}} class="main-categories">
+  <h1 class="title title-education">Interests</h1>
+
+  <section class="info-groups">
+    {#each data.interests as interest}
+        <div class="interaction-design">
+          <h2 class="degree">{interest.name}</h2>
+          <div class="grade-info">
+            <p class="year">{interest.year}</p>
+            <p class="school">{interest.role}</p>
+                {#each interest.details as detail}
+                  <Details detail={detail} type='interests' />
+                {/each}
+          </div>
+        </div>
+    {/each}
+  </section>
 </main>
 
+
 <style>
-  main {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    place-items: center;
+  .main-categories {
+    width: 80vw;
+    margin-left: 20vw;
+    margin-right: 25vw;
   }
 
-  h1 {
-    font-size: 10rem;
+  .info-groups {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+
+  .title-education {
+    justify-self: left;
+  }
+
+  @media (min-width: 1600px) {
+  .main-categories {
+    width: 80vw;
+    margin-left: 15vw;
+    place-items: center;
+  }
+  }
+  @media (max-width: 1200px) {
+    .info-groups {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+  @media (max-width: 900px) {
+    .info-groups {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+    }
+    .main-categories {
+    width: 80vw;
+    margin-left: 25vw;
+    place-items: center;
+  }
   }
 </style>
