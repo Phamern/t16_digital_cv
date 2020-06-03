@@ -3,7 +3,6 @@ import SideNav from './SideNav.svelte'
 import BurgerMenu from './BurgerMenu.svelte'
 
 export let show = false;
-// export let open;
 
 export let hideMe;
 
