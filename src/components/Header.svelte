@@ -3,6 +3,9 @@ import SideNav from './SideNav.svelte'
 import BurgerMenu from './BurgerMenu.svelte'
 
 export let show = false;
+// export let open;
+
+export let hideMe;
 
 	let burgerMenu = () => {
 		show = !show
@@ -15,9 +18,9 @@ export let show = false;
   <h1 class='header-title'>
     Curriculum Vitae
   </h1>
-  <!-- <div class="burger-menu">
-    <BurgerMenu show={show}/>
-  </div> -->
+  <div class='burger'>
+    <BurgerMenu show={show} burgerMenu={burgerMenu} hideMe={hideMe} />
+  </div>
 </header>
 <style>
 
@@ -25,7 +28,7 @@ header {
   display: grid;
   top: 0;
   left: 0;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   position: fixed;
   height: 15vh;
   width: 100vw;
@@ -46,10 +49,6 @@ header {
   margin: 2rem;
   justify-self: left;
 }
-
-/* .burger-menu {
-  display: none;
-} */
 
 @media (max-width: 900px) {
 

@@ -38,28 +38,21 @@
 
 
 <style>
-  .main-categories {
-    width: 80vw;
-    margin-left: 20vw;
-    padding: 0;
-  }
-
-  .title-education {
-    justify-self: left;
-    margin-left: 5rem;
-  }
 
   .info-groups {
     display: grid;
-    grid-template-columns: repeat(3, 22vw);
-    gap: 2rem;
-    margin-left: 5rem;
+    grid-template-columns: repeat(3, 20vw);
+    gap: 3rem;
+  }
+
+  .title {
+    justify-self: left;
   }
 
   @media (max-width: 1200px) {
     .info-groups {
       grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
+      column-gap: 10rem;
     }
   }
 

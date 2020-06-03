@@ -2,13 +2,43 @@
 	import Header from './components/Header.svelte'
 	import SideNav from './components/SideNav.svelte'
 
+	import { Router, Link, Route } from 'svelte-routing'
+	import Education from './components/Education.svelte'
+	import Experience from './components/Experience.svelte'
+	import Interests from './components/Interests.svelte'
+	import Eivind from './components/Eivind.svelte'
+	import { fade } from 'svelte/transition'
+
+	export let url = '';
+
+	let open = false;
+	
+	const hideMe = () => {
+		if(window.innerWidth < 900) {
+			open = !open
+		}
+	}
+	
 </script>
-	<svelte:head>
-		<link href="https://fonts.googleapis.com/css2?family=Eczar&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
-	</svelte:head>
-	<Header />
-	<SideNav />
+
+<svelte:head>
+	<link href="https://fonts.googleapis.com/css2?family=Eczar&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+</svelte:head>
+<Router url='{url}'>
+	<Header hideMe={hideMe}/>
+	{#if !open}
+		<SideNav hideMe={hideMe} />
+	{/if}
+	
+	<div>
+		<Route path='/'><Eivind /></Route>
+		<Route path='education' component='{Education}' />
+		<Route path='/experience' component='{Experience}' />
+		<Route path='/interests' component='{Interests}' />
+	</div>
+</Router>
+
 <style>
 
 :global(*) {
@@ -35,10 +65,19 @@
 }
 
 :global(.main-categories) {
-    width: 100vw;
+    width: 80vw;
+		margin-left: 20vw;
     display: grid;
-		justify-content: center;
-		padding: 3rem;
+		justify-content: left;
+		padding: 5rem;
+}
+
+@media (max-width: 900px){
+	:global(.main-categories) {
+		width: 100vw;
+		margin: 0;
+		padding: 2rem;
+	}
 }
 
 :global(p) {

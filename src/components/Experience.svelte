@@ -16,9 +16,9 @@
           <div class="grade-info">
             <p class="school">{experience.role}</p>
             <p class="year">{experience.year}</p>
-                {#each experience.details as detail}
-                  <Details detail={detail} type='experience' />
-                {/each}
+            {#each experience.details as detail}
+              <Details detail={detail} type='experience' />
+            {/each}
           </div>
         </div>
     {/each}
@@ -27,46 +27,21 @@
 
 
 <style>
-  .main-categories {
-    width: 80vw;
-    margin-left: 20vw;
-    margin-right: 20vw;
-  }
 
   .info-groups {
     display: grid;
     grid-template-columns: repeat(3, 20vw);
     gap: 3rem;
-    margin-left: 5rem;
   }
 
-  .title-experience {
+  .title {
     justify-self: left;
-    margin-left: 5rem;
   }
 
-  @media (min-width: 1600px) {
-  .main-categories {
-    width: 80vw;
-    margin-left: 15vw;
-    place-items: center;
-  }
-  }
-  @media (max-width: 1200px) {
-    .info-groups {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
-  }
   @media (max-width: 900px) {
     .info-groups {
       grid-template-columns: repeat(1, 1fr);
       gap: 2rem;
     }
-    .main-categories {
-    width: 80vw;
-    margin-left: 5vw;
-    place-items: center;
-  }
   }
 </style>

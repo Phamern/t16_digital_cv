@@ -1,39 +1,23 @@
 <script>
 	import { Router, Link, Route } from 'svelte-routing'
-	import Header from './Header.svelte'
-	import Education from './Education.svelte'
-	import Experience from './Experience.svelte'
-	import Interests from './Interests.svelte'
-	import Eivind from './Eivind.svelte'
-	import ContactInfo from './ContactInfo.svelte'
-	import BurgerMenu from './BurgerMenu.svelte'
-	import { fade } from 'svelte/transition'
+	import { fly } from 'svelte/transition'
 
-	export let url = "";
 	let show = false;
+	export let hideMe;
 
 	let burgerMenu = () => {
 		show = !show
 	}
 
 </script>
-<Router url='{url}'>
-<BurgerMenu burgerMenu={burgerMenu} show={show}/>
-	<nav class:active='{show}' in:fade class='side-nav'>
+	<nav transition:fly={{x: -300, duration: 500}} class='side-nav'>
 		<div>
-			<Link to='/'><p on:click={burgerMenu} class='menu-items'>about me</p></Link>
-			<Link to='education'><p on:click={burgerMenu} class='menu-items'>education</p></Link>
-			<Link to='experience'><p on:click={burgerMenu} class='menu-items'>experience</p></Link>
-			<Link to='interests'><p on:click={burgerMenu} class='menu-items'>interests</p></Link>
+			<Link to='/'><p on:click={hideMe} class='menu-items'>about me</p></Link>
+			<Link to='education'><p on:click={hideMe} class='menu-items'>education</p></Link>
+			<Link to='experience'><p on:click={hideMe} class='menu-items'>experience</p></Link>
+			<Link to='interests'><p on:click={hideMe} class='menu-items'>interests</p></Link>
 		</div>
 	</nav>
-	<div>
-		<Route path='/'><Eivind /></Route>
-		<Route path='education' component='{Education}'/>
-		<Route path='/experience' component='{Experience}' />
-		<Route path='/interests' component='{Interests}' />
-	</div>
-</Router>
 
 <style>
 
@@ -46,13 +30,6 @@
 	display: grid;
 	place-items: center;
 	border-right: 1px solid #2e2e2e;
-	transition: .8s;
-}
-
-.active {
-	/* transform: translateX(-100vw); */
-	display: none;
-
 }
 
 .menu-items {

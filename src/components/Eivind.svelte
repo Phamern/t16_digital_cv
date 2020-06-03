@@ -39,12 +39,6 @@
 
 <style>
 
-   .main-categories {
-    width: 80vw;
-    margin-left: 20vw;
-    justify-content: left;
-  }
-
    li {
     font-weight: 100;
     font-family: 'Roboto', monospace;
@@ -63,7 +57,6 @@
 
   .title {
     justify-self: left;
-    margin-left: 5rem;
   }
 
   .info-group {
@@ -71,7 +64,6 @@
     height: auto;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
-    margin-left: 5rem;
   }
 
   .keywords {
@@ -86,14 +78,6 @@
 
   .display-image {
     width: 25vw;
-  }
-
-  @media (max-width: 900px) {
-    .main-categories {
-      width: 100vw;
-      margin: 0;
-      padding: 2rem;
-    }
   }
   
 </style>
