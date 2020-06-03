@@ -1,5 +1,12 @@
 <script>
 import SideNav from './SideNav.svelte'
+import BurgerMenu from './BurgerMenu.svelte'
+
+export let show = false;
+
+	let burgerMenu = () => {
+		show = !show
+	}
 
 </script>
 
@@ -8,8 +15,12 @@ import SideNav from './SideNav.svelte'
   <h1 class='header-title'>
     Curriculum Vitae
   </h1>
+  <!-- <div class="burger-menu">
+    <BurgerMenu show={show}/>
+  </div> -->
 </header>
 <style>
+
 header {
   display: grid;
   top: 0;
@@ -35,6 +46,10 @@ header {
   margin: 2rem;
   justify-self: left;
 }
+
+/* .burger-menu {
+  display: none;
+} */
 
 @media (max-width: 900px) {
 

@@ -12,11 +12,6 @@ const handleClick = () => {
   hideText = !show ? 'Show' : 'Hide'
 }
 
-const test = event => {
-  const { target } = event
-  console.log(target)
-}
-
 </script>
 
 
@@ -26,12 +21,14 @@ const test = event => {
   <img class:active={show} on:click={handleClick} class='arrow' src="../img/arrow.png" alt="arrow">
 </div>
 {#if show}
+<div class="list">
   <li transition:fade={{duration: 500}}>{detail.a}</li>
   <li transition:fade={{duration: 500}}>{detail.b}</li>
   <li transition:fade={{duration: 500}}>{detail.c}</li>
   {#if type === 'education'}
     <li transition:fade={{duration: 500}}>{detail.d}</li>
   {/if}
+</div>
 {/if}
  <style>
 
@@ -60,6 +57,10 @@ const test = event => {
     cursor: pointer;
     align-self: right;
   
+  }
+
+  .list {
+    margin-bottom: 3rem;
   }
  
   li {

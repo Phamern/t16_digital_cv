@@ -17,7 +17,7 @@
 </script>
 
 
-<main in:fly={{ y: 200, duration: 1500, delay: 500}} out:fade={{duration: 10}} class="main-categories">
+<main in:fly={{ y: 200, duration: 1500, delay: 100}} out:fade={{duration: 10}} class="main-categories">
   <h1 class="title title-education">Education</h1>
 
   <section class="info-groups">
@@ -27,9 +27,9 @@
           <div class="grade-info">
             <p class="year">{education.year}</p>
             <p class="school">{education.school}</p>
-                {#each education.details as detail}
-                <Details detail={detail} type='education'/>
-                {/each}
+            {#each education.details as detail}
+              <Details detail={detail} type='education'/>
+            {/each}
           </div>
         </div>
     {/each}

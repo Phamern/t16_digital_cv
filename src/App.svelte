@@ -3,14 +3,12 @@
 	import SideNav from './components/SideNav.svelte'
 
 </script>
-
-<svelte:head>
-	<link href="https://fonts.googleapis.com/css2?family=Eczar&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
-</svelte:head>
-<Header />
-<SideNav />
-
+	<svelte:head>
+		<link href="https://fonts.googleapis.com/css2?family=Eczar&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+	</svelte:head>
+	<Header />
+	<SideNav />
 <style>
 
 :global(*) {

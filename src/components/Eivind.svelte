@@ -5,7 +5,7 @@
 </script>
 
 
-<main in:fly={{ y: 200, duration: 1500, delay: 500}} out:fade={{duration: 10}} class="main-categories">
+<main in:fly={{ y: 200, duration: 1500, delay: 100}} out:fade={{duration: 10}} class="main-categories">
   <h1 class="title title-eivind">Eivind Pham</h1>
   <div class='info-group'>
     <div class="info-text">
