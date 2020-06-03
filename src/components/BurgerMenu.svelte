@@ -8,9 +8,9 @@
 
 <div class='button' on:click='{burgerMenu}' on:click={hideMe}>
   <div class="icon-container">
-    <div class:active={!show} class="burger-icon"></div>
-    <div class:active={!show} class="burger-icon"></div>
-    <div class:active={!show} class="burger-icon"></div>
+    <div class:active={show} class="burger-icon"></div>
+    <div class:active={show} class="burger-icon"></div>
+    <div class:active={show} class="burger-icon"></div>
   </div>
 </div>
 
