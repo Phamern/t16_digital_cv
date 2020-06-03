@@ -12,11 +12,22 @@
 	export let url = '';
 
 	let open = false;
+
+	let show = false;
 	
 	const hideMe = () => {
 		if(window.innerWidth < 900) {
 			open = !open
 		}
+	}
+	
+	const showNav = () => {
+		show = !show
+	}
+
+	const handleClick = () => {
+		hideMe()
+		showNav()
 	}
 	
 </script>
@@ -26,9 +37,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
 </svelte:head>
 <Router url='{url}'>
-	<Header hideMe={hideMe}/>
+	<Header handleClick={handleClick} show={show}/>
 	{#if !open}
-		<SideNav hideMe={hideMe} />
+		<SideNav handleClick={handleClick} show={show}/>
 	{/if}
 	
 	<div>

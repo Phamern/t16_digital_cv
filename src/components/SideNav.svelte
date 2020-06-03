@@ -2,20 +2,15 @@
 	import { Router, Link, Route } from 'svelte-routing'
 	import { fly } from 'svelte/transition'
 
-	let show = false;
-	export let hideMe;
-
-	let burgerMenu = () => {
-		show = !show
-	}
+	export let handleClick;
 
 </script>
 	<nav transition:fly={{x: -300, duration: 500}} class='side-nav'>
 		<div>
-			<Link to='/'><p on:click={hideMe} class='menu-items'>about me</p></Link>
-			<Link to='education'><p on:click={hideMe} class='menu-items'>education</p></Link>
-			<Link to='experience'><p on:click={hideMe} class='menu-items'>experience</p></Link>
-			<Link to='interests'><p on:click={hideMe} class='menu-items'>interests</p></Link>
+			<Link to='/'><p on:click={handleClick} class='menu-items'>about me</p></Link>
+			<Link to='education'><p on:click={handleClick} class='menu-items'>education</p></Link>
+			<Link to='experience'><p on:click={handleClick} class='menu-items'>experience</p></Link>
+			<Link to='interests'><p on:click={handleClick} class='menu-items'>interests</p></Link>
 		</div>
 	</nav>
 

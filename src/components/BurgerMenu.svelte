@@ -1,12 +1,11 @@
 <script>
-	export let burgerMenu;
-  export let show;
 
-  export let hideMe;
+  export let show;
+  export let handleClick;
   
 </script>
 
-<div class='button' on:click='{burgerMenu}' on:click={hideMe}>
+<div class='button' on:click='{handleClick}'>
   <div class="icon-container">
     <div class:active={!show} class="burger-icon"></div>
     <div class:active={!show} class="burger-icon"></div>
@@ -30,6 +29,10 @@
     width: 30px;
     height: 1px;
     background-color: #fff;
+  }
+
+  .active {
+    transition: .5s;
   }
 
   .active:nth-child(1) {

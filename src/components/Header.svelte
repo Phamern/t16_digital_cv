@@ -2,13 +2,8 @@
 import SideNav from './SideNav.svelte'
 import BurgerMenu from './BurgerMenu.svelte'
 
-export let show = false;
-
-export let hideMe;
-
-	let burgerMenu = () => {
-		show = !show
-	}
+export let show;
+export let handleClick;
 
 </script>
 
@@ -18,7 +13,7 @@ export let hideMe;
     Curriculum Vitae
   </h1>
   <div class='burger'>
-    <BurgerMenu show={show} burgerMenu={burgerMenu} hideMe={hideMe} />
+    <BurgerMenu show={show} handleClick={handleClick} />
   </div>
 </header>
 <style>
