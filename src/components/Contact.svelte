@@ -6,9 +6,9 @@
 </script>
 
 <main in:fly={{ y: 100, duration: 1000}} out:fade={{duration: 10}} class="main-categories">
- <h1 class="title">Contact</h1>
+  <h1 class="title">Contact</h1>
   <section class="contact-info-wrapper">
-     {#each data.contactInfo as item}
+    {#each data.contactInfo as item}
       <div>
         <h2 class="degree">birth</h2>
         <div class="grade-info">
@@ -72,21 +72,18 @@ a:hover {
   color: #2e2e2e;
 }
 
-
-  @media (max-width: 1200px) {
-    .contact-info-wrapper {
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 10rem;
-    }
+@media (max-width: 1200px) {
+  .contact-info-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10rem;
   }
+}
 
-  @media (max-width: 750px) {
-    .contact-info-wrapper{
-      grid-template-columns: repeat(1, 1fr);
-      gap: 2rem;
-    }
+@media (max-width: 750px) {
+  .contact-info-wrapper{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
   }
-
-
+}
   
 </style>

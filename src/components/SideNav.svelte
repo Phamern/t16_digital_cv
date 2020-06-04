@@ -30,24 +30,23 @@
 }
 
 .menu-items {
-    color: #fff;
-    font-family: 'Eczar', serif;
-		font-size: 2rem;
-		font-weight: 400;
-    letter-spacing: .1rem;
-    cursor: pointer;
-    margin-left: 2rem;
-		margin-right: 2rem;
-		text-decoration: none;
-		justify-self: center;
-		transition: 0.1s;
-		
-  }
+	color: #fff;
+	font-family: 'Eczar', serif;
+	font-size: 2rem;
+	font-weight: 400;
+	letter-spacing: .1rem;
+	cursor: pointer;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	text-decoration: none;
+	justify-self: center;
+	transition: 0.1s;
+}
 
-	.menu-items:hover {
-		transform: translateX(.5rem);
-		text-decoration: none;
-	}
+.menu-items:hover {
+	transform: translateX(.5rem);
+	text-decoration: none;
+}
 
 @media (max-width: 1300px){
 	.menu-items {

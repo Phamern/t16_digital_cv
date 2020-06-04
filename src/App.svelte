@@ -14,12 +14,16 @@
 	let open = false;
 	let show = false;
 	
+	//Sier ifra om bredden er høyere en 770 for at åpne og lukke skal fungere kun til gitte responsive
+	//størrelser og ikke på desktop
+	//Åpner og lukker side menyen
 	const toggleSideNav = () => {
 		if(window.innerWidth < 770) {
 			open = !open
 		}
 	}
-	
+
+	//Aktiverer burger menu state
 	const handleBurgerAnimation = () => {
 		show = !show
 	}

@@ -33,54 +33,52 @@ const handleClick = () => {
 
 <style>
 
- .active {
-    transform: rotate(180deg);
-  }
+.active {
+  transform: rotate(180deg);
+}
 
-  .show-details-group {
-    height: 20px;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 2rem;
-    gap: 1rem;
-  }
+.show-details-group {
+  height: 20px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
 
-  .show-details {
-    cursor: pointer;
-  }
+.show-details {
+  cursor: pointer;
+}
 
-  .arrow {
-    width: 15px;
-    color: white;
-    transition: .5s;
-    cursor: pointer;
-    align-self: right;
-    transition: 0.7s;
-  
-  }
+.arrow {
+  width: 15px;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+  align-self: right;
+  transition: 0.7s;
 
-  .list {
-    margin-bottom: 3rem;
-  }
- 
-  .list li {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 1rem;
-    padding-top: 1rem;
-  }
+}
 
-  .subtitle {
-    line-height: 1.5rem;
-    padding-top: 1rem;
-    font-family: 'Eczar', serif;
-  }
+.list {
+  margin-bottom: 3rem;
+}
 
-  .description {
-    line-height: 1.5rem;
-  }
+.list li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
 
+.subtitle {
+  line-height: 1.5rem;
+  padding-top: 1rem;
+  font-family: 'Eczar', serif;
+}
 
+.description {
+  line-height: 1.5rem;
+}
 
  </style>

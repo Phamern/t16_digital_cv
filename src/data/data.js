@@ -91,7 +91,7 @@ export const data = {
       role: 'Postal Worker',
       year: 'Aug 2017 - Aug 2018',
       details:  [{
-        description: "",
+        description: "Worked nightshifts at the terminal for a year between studies. The job was sorting mail in a fastpace environment where we needed to catch deadlines in order to get the mail out. The job required me to be structured and oriented",
         a: 'Temporary', 
         b: 'Nightshift', 
         c: 'Fast-paced environment',
@@ -105,6 +105,7 @@ export const data = {
       role: 'Assistent',
       year: 'Sept 2014 - Jun 2015',
       details:  [{
+        description: "Worked a year as an assistent teacher mainly with pupils with special difficulties. A rewarding job as part of it was preparing and creating the best school day for the pupils. A close human interaction job tackling childrens behavior and wishes.",
         a: 'Part time 80%', 
         b: 'Special ed', 
         c: 'Elementary school',
@@ -118,6 +119,7 @@ export const data = {
       role: 'Cashier',
       year: 'Nov 2014 - Jun 2015',
       details:  [{
+        description: "Voluntary job at Cinemateket. Cinemateket is the norwegian museum of cinema and movies. Got to work as a cashier aswell as getting an insight in analog film and the cinema industry.",
         a: 'Voluntary', 
         b: 'Movies', 
         c: 'Preparations',
@@ -133,32 +135,18 @@ export const data = {
       role: 'Apprentice',
       year: 'Aug 2019 - ',
       description: 'A kung fu style which focus on self defence, self development, physical exercise, mindfullness and philosophy. Been practicing since august 2019 at Sentrum Wing Chun in Oslo. Wing chun helps me stay focus and mindfull in everything I do as the concept and philosophy can be applied to every ascpect of life.'
-      // details:  [{
-      //   a: 'Kung fu', 
-      //   b: 'Mindfullness', 
-      //   c: 'Training',
-      // }]
     },
     {
       name: 'Music',
       role: 'Hobby',
       year: 'Life',
-      description: 'Been listening to music my whole life. I listen to the whole spectrum of music'
-      // details:  [{
-      //   a: 'Music discovering', 
-      //   b: 'Guitar', 
-      //   c: 'Concerts'
-      // }]
+      description: 'Been listening to music my whole life. I listen to the whole spectrum of music. love discovering new music and been going to concerts my whole life. Also been playing guitar for fun at my spare time.'
     },
     {
       name: 'Walking',
       role: 'Hobby',
       year: 'Life',
-      // details:  [{
-      //   a: 'Part time', 
-      //   b: 'Sales', 
-      //   c: 'Maintenance'
-      // }]
+      description: "Walking for me is a form of meditation. I walk wherever my destination is. When I walk I try to observe everything around and study other people and the surroundings around me."
     }
   ],
   contactInfo: [

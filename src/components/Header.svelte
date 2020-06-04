@@ -38,6 +38,7 @@ header {
   font-size: 1.5rem;
   color: #fff;
 }
+
 .header-logo {
   height: 40px;
   margin: 2rem;
@@ -45,7 +46,6 @@ header {
 }
 
 @media (max-width: 900px) {
-
   .header-title {
     font-size: 1rem;
   }
