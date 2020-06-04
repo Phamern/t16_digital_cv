@@ -1,18 +1,16 @@
 <script>
+	import { Router, Link, Route } from 'svelte-routing'
 	import Header from './components/Header.svelte'
 	import SideNav from './components/SideNav.svelte'
-
-	import { Router, Link, Route } from 'svelte-routing'
+	import Eivind from './components/Eivind.svelte'
 	import Education from './components/Education.svelte'
 	import Experience from './components/Experience.svelte'
 	import Interests from './components/Interests.svelte'
-	import Eivind from './components/Eivind.svelte'
 	import { fade } from 'svelte/transition'
 
 	export let url = '';
 
 	let open = false;
-
 	let show = false;
 	
 	const hideMe = () => {
@@ -39,9 +37,8 @@
 <Router url='{url}'>
 	<Header handleClick={handleClick} show={show}/>
 	{#if !open}
-		<SideNav handleClick={handleClick} show={show}/>
+		<SideNav handleClick={handleClick} />
 	{/if}
-	
 	<div>
 		<Route path='/'><Eivind /></Route>
 		<Route path='education' component='{Education}' />
@@ -87,7 +84,7 @@
 	:global(.main-categories) {
 		width: 100vw;
 		margin: 0;
-		padding: 2rem;
+		padding: 2rem 5rem;
 	}
 }
 

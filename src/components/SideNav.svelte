@@ -5,7 +5,8 @@
 	export let handleClick;
 
 </script>
-	<nav transition:fly={{x: -300, duration: 500}} class='side-nav'>
+
+	<nav in:fly={{x: -300, duration: 500}} out:fly class='side-nav'>
 		<div>
 			<Link to='/'><p on:click={handleClick} class='menu-items'>about me</p></Link>
 			<Link to='education'><p on:click={handleClick} class='menu-items'>education</p></Link>
@@ -51,7 +52,6 @@
 	.menu-items {
 		font-size: 1.5rem;
 	}
-	
 }
 
 @media (max-width: 900px){
