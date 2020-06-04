@@ -189,7 +189,7 @@ export const data = {
       phone: '+47 908 96 870',
       email: 'eivindmpham@gmail.com',
       website: 'eivindpham.no',
-      refrences: 'Please contact for written and contact refrences '
+      refrences: 'Please contact me for written and contact refrences '
     }
   ]
 };

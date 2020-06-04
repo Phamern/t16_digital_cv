@@ -1,6 +1,5 @@
 <script>
   import { fly, fade } from "svelte/transition";
-  import { quintOut } from 'svelte/easing';
   import { data } from "../data/data.js";
   import Details from './Details.svelte'
 
@@ -16,7 +15,7 @@
             <p class="year">{interest.year}</p>
             <p class="school">{interest.role}</p>
             {#each interest.details as detail}
-              <Details detail={detail} type='interests' />
+              <Details detail={detail} />
             {/each}
           </div>
         </div>

@@ -77,17 +77,15 @@
     .section-wrapper {
       grid-template-columns: 1fr;
       grid-template-rows: auto 1fr;
-      gap: 3rem;
+      gap: 0;
       justify-content: left;
     }
 
     .display-eivind-image {
-      grid-column: 1;
+      grid-column: 1 / 1;
       grid-row: 1 / 1;
-      display: grid;
       padding-top: 3rem;
-      place-items: center;
-      height: 60vh;
+      justify-content: left;
     }
 
     .intro-text p {
@@ -105,14 +103,12 @@
     }
 
     .keywords-item {
-      display: grid;
       grid-template-columns: repeat(2, 10rem);
       row-gap: 1rem;
+      padding-bottom: 2rem;
     }
 
     .keywords-item li {
-      font-weight: 400;
-      font-family: 'Roboto', monospace;
       font-size: 1rem;
     }
 

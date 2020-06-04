@@ -6,7 +6,6 @@ let hideText = 'Show'
 
 export let detail
 
-
 const handleClick = () => {
   show = !show
   hideText = !show ? 'Show' : 'Hide'
