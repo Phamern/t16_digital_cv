@@ -54,13 +54,17 @@
 	}
 }
 
-@media (max-width: 900px){
+@media (max-width: 768px){
 	.side-nav {
 		width: 100vw;
 		height: 100vh;
 		position: fixed;
 		grid-template-rows: repeat(3, 1fr);
 		z-index: 10;
+	}
+
+	.menu-items {
+		font-size: 1.5rem;
 	}
 }
 </style>

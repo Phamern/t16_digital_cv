@@ -14,7 +14,7 @@
 	let show = false;
 	
 	const hideMe = () => {
-		if(window.innerWidth < 900) {
+		if(window.innerWidth < 770) {
 			open = !open
 		}
 	}
@@ -80,11 +80,11 @@
 		padding: 5rem;
 }
 
-@media (max-width: 900px){
+@media (max-width: 768px){
 	:global(.main-categories) {
 		width: 100vw;
 		margin: 0;
-		padding: 2rem 5rem;
+		padding: 2rem 3rem;
 	}
 }
 

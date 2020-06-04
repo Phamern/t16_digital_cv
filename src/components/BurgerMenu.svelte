@@ -50,7 +50,7 @@
     transform: translateY(-10px) rotate(-45deg);
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     .button {
       display: block;
     }

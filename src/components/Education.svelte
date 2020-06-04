@@ -56,7 +56,7 @@
     }
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 750px) {
     .info-groups {
       grid-template-columns: repeat(1, 1fr);
       gap: 2rem;
