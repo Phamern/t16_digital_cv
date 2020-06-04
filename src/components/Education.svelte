@@ -3,17 +3,6 @@
   import { data } from "../data/data.js";
   import Details from './Details.svelte'
 
-  // let show = false;
-  // let showText = 'Show';
-
-  // const showDetail = (i) => {
-  //   if( i === show) {
-  //     show = false;
-
-  //   } else {
-  //     show = i
-  //   }
-  // }
 </script>
 
 

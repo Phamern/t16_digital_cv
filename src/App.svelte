@@ -6,6 +6,7 @@
 	import Education from './components/Education.svelte'
 	import Experience from './components/Experience.svelte'
 	import Interests from './components/Interests.svelte'
+	import Contact from './components/Contact.svelte'
 	import { fade } from 'svelte/transition'
 
 	export let url = '';
@@ -44,6 +45,7 @@
 		<Route path='education' component='{Education}' />
 		<Route path='/experience' component='{Experience}' />
 		<Route path='/interests' component='{Interests}' />
+		<Route path='/contact' component='{Contact}' />
 	</div>
 </Router>
 
@@ -58,7 +60,6 @@
 	padding: 0;
 	background-color: #161616;
 	color: #fff;
-	overflow-x: hidden;
 }
 
 :global(.title) {
@@ -85,6 +86,7 @@
 		width: 100vw;
 		margin: 0;
 		padding: 2rem 3rem;
+		overflow-x: hidden;
 	}
 }
 

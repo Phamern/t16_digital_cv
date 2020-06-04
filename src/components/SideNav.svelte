@@ -12,6 +12,7 @@
 			<Link to='education'><p on:click={handleClick} class='menu-items'>education</p></Link>
 			<Link to='experience'><p on:click={handleClick} class='menu-items'>experience</p></Link>
 			<Link to='interests'><p on:click={handleClick} class='menu-items'>interests</p></Link>
+			<Link to='contact'><p on:click={handleClick} class='menu-items'>contact</p></Link>
 		</div>
 	</nav>
 

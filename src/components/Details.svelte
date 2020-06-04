@@ -34,7 +34,6 @@ const handleClick = () => {
 
  .active {
     transform: rotate(180deg);
-    transition: 1s;
   }
 
   .show-details-group {
@@ -56,6 +55,7 @@ const handleClick = () => {
     transition: .5s;
     cursor: pointer;
     align-self: right;
+    transition: 0.7s;
   
   }
 

@@ -5,39 +5,33 @@
 </script>
 
 <main in:fly={{ y: 200, duration: 1500, delay: 100}} out:fade={{duration: 10}} class="main-categories">
-
   <h1 class="title">Eivind Pham</h1>
   <section class="section-wrapper">
-      <div class="display-eivind-image">
-        <img class='display-image' src="img/profile-image-eivind.jpg" alt="display eivind">
-      </div>
-      <div class='intro-text'>
-      <div class="text-about-me">
-        <h2>My story</h2>
-        <p>26 years old creative from Kristiansand, Norway. From birth I’ve always been curious and observant of environments and other human beings. </p>
-      </div>
-      <div class="keywords">
-        <h2>Keywords</h2>
-        <li class='keywords'>Adaptable</li>
-        <li class='keywords'>Curious</li>
-        <li class='keywords'>Calm</li>
-      </div>
-      </div>
-  </section>
-  <section class="contact-info-wrapper">
-        <h2 class='contact-title'>Contact Info</h2>
-        {#each data.contactInfo as item}
-          <li>{item.birth}</li>
-          <li>{item.adress}</li>
-          <li>{item.phone}</li>
-          <li>{item.email}</li>
-          <li><a href='http://www.eivindpham.no'>{item.website}</a></li>
-        {/each}
+    <div class="display-eivind-image">
+      <img class='display-image' src="img/profile-image-eivind.jpg" alt="display eivind">
+    </div>
+    <div class='intro-text'>
+    <div class="text-about-me">
+      <h2>My story</h2>
+      <p>26 years old creative from Kristiansand, Norway. From birth I’ve always been curious and observant of environments and other human beings. </p>
+    </div>
+    <div class="keywords">
+      <h2>Keywords</h2>
+      <li class='keywords'>Adaptable</li>
+      <li class='keywords'>Curious</li>
+      <li class='keywords'>Calm</li>
+    </div>
+    </div>
   </section>
 </main>
 
 <style>
  
+  .main-categories {
+    overflow-y: hidden;
+    height: 100vh;
+  }
+
   .section-wrapper {
     display: grid;
     width: 100%;
@@ -62,7 +56,7 @@
 
   .intro-text p {
     width: 400px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font: 100;
     line-height: 3rem;
   }
@@ -73,46 +67,11 @@
     padding: 1rem 0;
   }
 
-  a {
-    text-decoration: underline;
-    color: white;
-    transition: 0.2s;
-    font-weight: 100;
-  }
-
-  a:hover {
-    color: #2e2e2e;
-  }
-
-  .contact-info-wrapper {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    width: 100%;
-    justify-content: center;
-  }
-
-  .contact-title {
-    text-align: center;
-  }
-  /* .intro {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .info-group {
-    display: grid;
-    height: auto;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
-  } */
-
-  .keywords {
-    font-family: 'Eczar', serif;
-    font-size: 1.3rem;
-  }
-  
-
   @media (max-width: 768px) {
+    .main-categories {
+    overflow-y: auto;
+    height: auto;
+  }
     .section-wrapper {
       grid-template-columns: 1fr;
       grid-template-rows: auto 1fr;
