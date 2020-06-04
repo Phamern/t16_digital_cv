@@ -16,9 +16,9 @@
         </div>
       </div>
       <div>
-        <h2 class="degree">adress</h2>
+        <h2 class="degree">address</h2>
         <div class="grade-info">
-          <p class="school">{item.adress}</p>
+          <p class="school">{item.address}</p>
         </div>
       </div>
       <div>
@@ -30,13 +30,19 @@
       <div>
         <h2 class="degree">e-mail</h2>
         <div class="grade-info">
-        <p><a href='mailto:{item.mail}'>{item.email}</a> </p>
+        <a href='mailto:{item.mail}'><p>{item.email}</p></a>
         </div>
       </div>
       <div>
         <h2 class="degree">website</h2>
         <div class="grade-info">
         <a href='http://www.eivindpham.no'><p>{item.website}</p></a>
+        </div>
+      </div>
+      <div>
+        <h2 class="degree">refrences</h2>
+        <div class="grade-info">
+          <p>{item.refrences}</p>
         </div>
       </div>
     {/each}

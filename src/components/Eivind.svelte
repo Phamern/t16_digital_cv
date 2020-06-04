@@ -15,22 +15,20 @@
       <h2>My story</h2>
       <p>26 years old creative from Kristiansand, Norway. From birth I’ve always been curious and observant of environments and other human beings. </p>
     </div>
-    <div class="keywords">
+    <div class="keywords-container">
       <h2>Keywords</h2>
-      <li class='keywords'>Adaptable</li>
-      <li class='keywords'>Curious</li>
-      <li class='keywords'>Calm</li>
+      <div class="keywords-item">
+        <li class='keywords'>Adaptable</li>
+        <li class='keywords'>Curious</li>
+        <li class='keywords'>Calm</li>
+        <li class='keywords'>Creative</li>
+      </div>
     </div>
     </div>
   </section>
 </main>
 
 <style>
- 
-  .main-categories {
-    overflow-y: hidden;
-    height: 100vh;
-  }
 
   .section-wrapper {
     display: grid;
@@ -61,17 +59,21 @@
     line-height: 3rem;
   }
 
-  li {
-    font-weight: 100;
-    font-family: 'Roboto', monospace;
-    padding: 1rem 0;
+  .keywords-item {
+    display: grid;
+    grid-template-columns: repeat(2, 15rem);
+    row-gap: 2rem;
   }
 
-  @media (max-width: 768px) {
-    .main-categories {
-    overflow-y: auto;
-    height: auto;
+  .keywords-item li{
+    font-weight: 400;
+    font-family: 'Roboto', monospace;
+    font-size: 1.5rem;
   }
+
+
+  @media (max-width: 768px) {
+
     .section-wrapper {
       grid-template-columns: 1fr;
       grid-template-rows: auto 1fr;
@@ -89,10 +91,10 @@
     }
 
     .intro-text p {
-    width: 70vw;
-    font-size: 1.5rem;
-    font-weight: 100;
-    line-height: 3rem;
+      width: 70vw;
+      font-size: 1.5rem;
+      font-weight: 100;
+      line-height: 3rem;
   }
     .intro-text {
       grid-row: 2;
@@ -101,6 +103,19 @@
     .display-image {
       width: 250px;
     }
+
+    .keywords-item {
+      display: grid;
+      grid-template-columns: repeat(2, 10rem);
+      row-gap: 1rem;
+    }
+
+  .keywords-item li{
+    font-weight: 400;
+    font-family: 'Roboto', monospace;
+    font-size: 1rem;
+  }
+
   }
   
 </style>

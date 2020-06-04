@@ -16,7 +16,7 @@
             <p class="school">{experience.role}</p>
             <p class="year">{experience.year}</p>
             {#each experience.details as detail}
-              <Details detail={detail} type='experience' />
+              <Details detail={detail} />
             {/each}
           </div>
         </div>

@@ -4,7 +4,6 @@ import { fly, fade } from "svelte/transition";
 let show = false;
 let hideText = 'Show'
 
-export let type
 export let detail
 
 
@@ -24,9 +23,9 @@ const handleClick = () => {
     <li transition:fade={{duration: 500}}>{detail.a}</li>
     <li transition:fade={{duration: 500}}>{detail.b}</li>
     <li transition:fade={{duration: 500}}>{detail.c}</li>
-    {#if type === 'education'}
-      <li transition:fade={{duration: 500}}>{detail.d}</li>
-    {/if}
+    <li transition:fade={{duration: 500}}>{detail.d}</li>
+    <li transition:fade={{duration: 500}}>{detail.e}</li>
+    <li transition:fade={{duration: 500}}>{detail.f}</li>
   </div>
 {/if}
 
