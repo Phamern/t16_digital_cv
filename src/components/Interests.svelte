@@ -14,9 +14,10 @@
           <div class="grade-info">
             <p class="year">{interest.year}</p>
             <p class="school">{interest.role}</p>
-            {#each interest.details as detail}
+            <p class="school">{interest.description}</p>
+            <!-- {#each interest.details as detail}
               <Details detail={detail} />
-            {/each}
+            {/each} -->
           </div>
         </div>
     {/each}

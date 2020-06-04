@@ -9,8 +9,9 @@ export const data = {
         b: 'UX', 
         c: 'Digital Design', 
         d: 'Front-end development',
-        e: 'Design processes',
+        e: 'Design process',
         f: 'Responsiv design',
+        description: "A two year degree with a practial approach to teaching. Throughout the study I've been tackling user centered design problems following UX methods, prototyping, user testing and front-end development",
       }]
     },
     {
@@ -101,7 +102,7 @@ export const data = {
         a: 'Part time 80%', 
         b: 'Special ed', 
         c: 'Elementary school',
-        d: 'Following up pupils with wpecial needs',
+        d: 'Helping pupils with special needs',
         e: 'Teaching',
         f: 'Tackling difficult situations',
       }]
@@ -125,62 +126,34 @@ export const data = {
       name: 'Wing Chun',
       role: 'Apprentice',
       year: 'Aug 2019 - ',
-      details:  [{
-        a: 'Kung fu', 
-        b: 'mindfullness', 
-        c: 'training'
-      }]
+      description: 'A kung fu style which focus on self defence, self development, physical exercise, mindfullness and philosophy. Been practicing since august 2019 at Sentrum Wing Chun in Oslo. Wing chun helps me stay focus and mindfull in everything I do as the concept and philosophy can be applied to every ascpect of life.'
+      // details:  [{
+      //   a: 'Kung fu', 
+      //   b: 'Mindfullness', 
+      //   c: 'Training',
+      // }]
     },
     {
-      name: 'Music discovering',
-      role: 'Junior Digital Designer',
-      year: 'may - aug 2019',
-      details:  [{
-        a: 'Listening', 
-        b: 'Guitar', 
-        c: 'Moodbased'
-      }]
+      name: 'Music',
+      role: 'Hobby',
+      year: 'Life',
+      description: 'Been listening to music my whole life. I listen to the whole spectrum of music'
+      // details:  [{
+      //   a: 'Music discovering', 
+      //   b: 'Guitar', 
+      //   c: 'Concerts'
+      // }]
     },
     {
       name: 'Walking',
-      role: 'Shop worker',
-      year: 'Nov 2018 - Apr 2019',
-      details:  [{
-        a: 'Part time', 
-        b:'Sales', 
-        c:'Maintenance'
-      }]
-    },
-    {
-      job: 'Posten As',
-      role: 'Postal Worker',
-      year: 'Aug 2017 - Aug 2018',
-      details:  [{
-        a: 'Temporary', 
-        b:'Nightshift', 
-        c:'Sorting'
-      }]
-    },
-    {
-      job: 'Steinerskolen',
-      role: 'Assistent',
-      year: 'Sept 2014 - Jun 2015',
-      details:  [{
-        a: 'Part time 80%', 
-        b:'Special ed', 
-        c:'Elementary school'
-      }]
-    },
-    {
-      job: 'Cinemateket',
-      role: 'Shop worker',
-      year: 'Nov 2014 - Jun 2015',
-      details:  [{
-        a: 'Voluntary', 
-        b:'Movies', 
-        c:'Maintenance'
-      }]
-    },
+      role: 'Hobby',
+      year: 'Life',
+      // details:  [{
+      //   a: 'Part time', 
+      //   b: 'Sales', 
+      //   c: 'Maintenance'
+      // }]
+    }
   ],
   contactInfo: [
     {

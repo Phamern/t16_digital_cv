@@ -19,6 +19,9 @@ const handleClick = () => {
 </div>
 {#if show}
   <div class="list">
+    <p>Description: </p>
+    <p>{detail.description}</p>
+    <p>Keywords: </p>
     <li transition:fade={{duration: 500}}>{detail.a}</li>
     <li transition:fade={{duration: 500}}>{detail.b}</li>
     <li transition:fade={{duration: 500}}>{detail.c}</li>
@@ -61,7 +64,7 @@ const handleClick = () => {
     margin-bottom: 3rem;
   }
  
-  li {
+  .list p, li {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 1rem;
