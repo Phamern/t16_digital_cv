@@ -25,6 +25,7 @@ export const data = {
         d:'Design process and methods',
         e:'Analog printing',
         f:'Typography',
+        description: "A two year degree with a practial approach to teaching. The study focused on the whole design process from ideation to different design products. We worked a lot with concept development, typography, visual identities and analog printing. "
       }]
     },
     {
@@ -38,6 +39,7 @@ export const data = {
         d: 'Yearbook',
         e: 'Trips to Berlin and New York',
         f: 'Social relations',
+        description: "A year living at the school and getting an introduction to graphic design and street art. The school focused alot on social connection, experiences and a light approach to the field.",
       }]
     }
   ],

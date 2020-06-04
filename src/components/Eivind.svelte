@@ -55,8 +55,7 @@
   .intro-text p {
     width: 400px;
     font-size: 1.2rem;
-    font: 100;
-    line-height: 3rem;
+    line-height: 2rem;
   }
 
   .keywords-item {

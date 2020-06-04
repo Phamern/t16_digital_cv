@@ -64,10 +64,15 @@ const handleClick = () => {
     margin-bottom: 3rem;
   }
  
-  .list p, li {
+  .list li {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 1rem;
+    padding-top: 1rem;
+  }
+
+  .list p {
+    line-height: 1.5rem;
     padding-top: 1rem;
   }
 

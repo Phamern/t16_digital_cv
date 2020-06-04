@@ -9,7 +9,7 @@
   <h1 class="title title-education">Education</h1>
   <section class="info-groups">
     {#each data.educationHistory as education, i}
-        <div class="interaction-design">
+        <div>
           <h2 class="degree">{education.field}</h2>
           <div class="grade-info">
             <p class="year">{education.year}</p>
