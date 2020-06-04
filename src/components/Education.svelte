@@ -5,7 +5,7 @@
 
 </script>
 
-<main in:fly={{ y: 200, duration: 1500, delay: 100}} out:fade={{duration: 10}} class="main-categories">
+<main in:fly={{ y: 100, duration: 1000}} out:fade={{duration: 10}} class="main-categories">
   <h1 class="title title-education">Education</h1>
   <section class="info-groups">
     {#each data.educationHistory as education, i}

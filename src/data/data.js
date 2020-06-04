@@ -5,13 +5,13 @@ export const data = {
       school: "Fagskolen Kristiania, Norway",
       year: "Aug 2018 - Jun 2020",
       details:  [{
+        description: "A two year degree with a practial approach to teaching. Throughout the study I've been tackling user centered design problems following UX methods, prototyping, user testing and front-end development",
         a: '2 year degree', 
         b: 'UX', 
         c: 'Digital Design', 
         d: 'Front-end development',
         e: 'Design process',
         f: 'Responsiv design',
-        description: "A two year degree with a practial approach to teaching. Throughout the study I've been tackling user centered design problems following UX methods, prototyping, user testing and front-end development",
       }]
     },
     {
@@ -19,13 +19,13 @@ export const data = {
       school: "Fagskolen Kristiania, Norway",
       year: "Aug 2015 - Jun 2017",
       details:  [{
+        description: "A two year degree with a practial approach to teaching. The study focused on the whole design process from ideation to different design products. We worked a lot with concept development, typography, visual identities and analog printing.",
         a:'2 year degree', 
         b:'Concept development', 
         c:'Adobe software', 
         d:'Design process and methods',
         e:'Analog printing',
         f:'Typography',
-        description: "A two year degree with a practial approach to teaching. The study focused on the whole design process from ideation to different design products. We worked a lot with concept development, typography, visual identities and analog printing. "
       }]
     },
     {
@@ -33,13 +33,13 @@ export const data = {
       school: "Skjeberg folkehøyskole, Norway",
       year: "Sept 2013 - Jun 2014",
       details:  [{
+        description: "A year living at the school and getting an introduction to graphic design and street art. The school focused alot on social connection, experiences and a light approach to the field.",
         a: '1 year', 
         b: 'Introduction to graphic design', 
         c: 'Street art techniques', 
         d: 'Yearbook',
         e: 'Trips to Berlin and New York',
         f: 'Social relations',
-        description: "A year living at the school and getting an introduction to graphic design and street art. The school focused alot on social connection, experiences and a light approach to the field.",
       }]
     }
   ],
@@ -49,6 +49,7 @@ export const data = {
       role: 'Digital Design Intern',
       year: 'march - may 2020',
       details:  [{
+        description: "An internship as a part of the interaction design degree. Got to work at a project with a team of digital designers og developers. Working alot with sketch, responsive design and pixel perfect design. Also got to experience alot of remote working and collaboration because of Covid-19.",
         a: 'Digital Design', 
         b: 'Team collaboration', 
         c: 'UX/UI',
@@ -62,6 +63,7 @@ export const data = {
       role: 'Junior Digital Designer',
       year: 'may - aug 2019',
       details:  [{
+        description: "A 20% part time job where I was lucky to assist their only designer with everything related to design. Worked alot with internal design such as their designmanual. Also worked on different illustrations and digital design ideation and proposals.",
         a: 'Part time', 
         b: 'Design Manual', 
         c: 'Icon & illustration',
@@ -75,6 +77,7 @@ export const data = {
       role: 'Shop worker',
       year: 'Nov 2018 - Apr 2019',
       details:  [{
+        description: "Part time job alongside school where I got to learn about the optical field. Worked alot with order of glasses for customers aswell as mounting and fixing glasses.",
         a: 'Part time', 
         b: 'Sales', 
         c: 'Maintenance',
@@ -88,6 +91,7 @@ export const data = {
       role: 'Postal Worker',
       year: 'Aug 2017 - Aug 2018',
       details:  [{
+        description: "",
         a: 'Temporary', 
         b: 'Nightshift', 
         c: 'Fast-paced environment',
@@ -118,7 +122,7 @@ export const data = {
         b: 'Movies', 
         c: 'Preparations',
         d: 'Sales',
-        e: 'Movie and film related discussions',
+        e: 'Insight in cinema',
         f: 'Fun and giving',
       }]
     },

@@ -19,9 +19,9 @@ const handleClick = () => {
 </div>
 {#if show}
   <div class="list">
-    <p>Description: </p>
-    <p>{detail.description}</p>
-    <p>Keywords: </p>
+    <p class='subtitle'>Description: </p>
+    <p class='description'>{detail.description}</p>
+    <p class='subtitle'>Keywords: </p>
     <li transition:fade={{duration: 500}}>{detail.a}</li>
     <li transition:fade={{duration: 500}}>{detail.b}</li>
     <li transition:fade={{duration: 500}}>{detail.c}</li>
@@ -71,9 +71,14 @@ const handleClick = () => {
     padding-top: 1rem;
   }
 
-  .list p {
+  .subtitle {
     line-height: 1.5rem;
     padding-top: 1rem;
+    font-family: 'Eczar', serif;
+  }
+
+  .description {
+    line-height: 1.5rem;
   }
 
 

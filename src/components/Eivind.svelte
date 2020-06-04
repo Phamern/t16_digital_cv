@@ -4,7 +4,7 @@
 
 </script>
 
-<main in:fly={{ y: 200, duration: 1500, delay: 100}} out:fade={{duration: 10}} class="main-categories">
+<main in:fly={{ y: 100, duration: 1000}} out:fade={{duration: 10}} class="main-categories">
   <h1 class="title">Eivind Pham</h1>
   <section class="section-wrapper">
     <div class="display-eivind-image">
@@ -87,14 +87,14 @@
       justify-content: left;
     }
 
+    .intro-text {
+      grid-row: 2;
+    }
+
     .intro-text p {
       width: 70vw;
       font-size: 1.2rem;
-      font-weight: 100;
       line-height: 2rem;
-  }
-    .intro-text {
-      grid-row: 2;
     }
 
     .display-image {
