@@ -10,18 +10,6 @@
   <section class="contact-info-wrapper">
     {#each data.contactInfo as item}
       <div>
-        <h2 class="degree">birth</h2>
-        <div class="grade-info">
-          <p class="school">{item.birth}</p>
-        </div>
-      </div>
-      <div>
-        <h2 class="degree">address</h2>
-        <div class="grade-info">
-          <p class="school">{item.address}</p>
-        </div>
-      </div>
-      <div>
         <h2 class="degree">phone number</h2>
         <div class="grade-info">
           <p class="school">{item.phone}</p>
@@ -37,6 +25,18 @@
         <h2 class="degree">website</h2>
         <div class="grade-info">
         <a href='http://www.eivindpham.no'><p>{item.website}</p></a>
+        </div>
+      </div>
+      <div>
+        <h2 class="degree">birth</h2>
+        <div class="grade-info">
+          <p class="school">{item.birth}</p>
+        </div>
+      </div>
+      <div>
+        <h2 class="degree">address</h2>
+        <div class="grade-info">
+          <p class="school">{item.address}</p>
         </div>
       </div>
       <div>

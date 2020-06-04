@@ -12,7 +12,7 @@
     </div>
     <div class='intro-text'>
       <div class="text-about-me">
-        <h2>My story</h2>
+        <h2>This is me</h2>
         <p>26 years old creative from Kristiansand, Norway. From birth I’ve always been curious and observant of environments and other human beings. </p>
       </div>
       <div class="keywords-container">
