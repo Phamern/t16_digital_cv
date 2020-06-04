@@ -92,9 +92,9 @@
 
     .intro-text p {
       width: 70vw;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 100;
-      line-height: 3rem;
+      line-height: 2rem;
   }
     .intro-text {
       grid-row: 2;
@@ -110,11 +110,11 @@
       row-gap: 1rem;
     }
 
-  .keywords-item li{
-    font-weight: 400;
-    font-family: 'Roboto', monospace;
-    font-size: 1rem;
-  }
+    .keywords-item li {
+      font-weight: 400;
+      font-family: 'Roboto', monospace;
+      font-size: 1rem;
+    }
 
   }
   
