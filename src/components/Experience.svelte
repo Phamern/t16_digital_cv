@@ -6,7 +6,6 @@
 
 </script>
 
-
 <main in:fly={{ y: 200, duration: 1500, delay: 100}} out:fade={{duration: 10}} class="main-categories">
   <h1 class="title title-experience">Experience</h1>
   <section class="info-groups">
@@ -25,7 +24,6 @@
   </section>
 </main>
 
-
 <style>
 
   .info-groups {
@@ -37,7 +35,7 @@
   .title {
     justify-self: left;
   }
-  
+
    @media (max-width: 1200px) {
     .info-groups {
       grid-template-columns: repeat(2, 1fr);

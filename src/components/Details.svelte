@@ -15,23 +15,22 @@ const handleClick = () => {
 
 </script>
 
-
-
 <div class='show-details-group'>
   <p class='show-details' on:click={handleClick}>{hideText} details</p>
   <img class:active={show} on:click={handleClick} class='arrow' src="../img/arrow.png" alt="arrow">
 </div>
 {#if show}
-<div class="list">
-  <li transition:fade={{duration: 500}}>{detail.a}</li>
-  <li transition:fade={{duration: 500}}>{detail.b}</li>
-  <li transition:fade={{duration: 500}}>{detail.c}</li>
-  {#if type === 'education'}
-    <li transition:fade={{duration: 500}}>{detail.d}</li>
-  {/if}
-</div>
+  <div class="list">
+    <li transition:fade={{duration: 500}}>{detail.a}</li>
+    <li transition:fade={{duration: 500}}>{detail.b}</li>
+    <li transition:fade={{duration: 500}}>{detail.c}</li>
+    {#if type === 'education'}
+      <li transition:fade={{duration: 500}}>{detail.d}</li>
+    {/if}
+  </div>
 {/if}
- <style>
+
+<style>
 
  .active {
     transform: rotate(180deg);

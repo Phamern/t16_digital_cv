@@ -6,7 +6,6 @@
 
 </script>
 
-
 <main in:fly={{ y: 200, duration: 1500, delay: 100}} out:fade={{duration: 10}} class="main-categories">
   <h1 class="title">Interests</h1>
   <section class="info-groups">
@@ -24,7 +23,6 @@
     {/each}
   </section>
 </main>
-
 
 <style>
 

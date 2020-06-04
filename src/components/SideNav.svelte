@@ -7,7 +7,7 @@
 </script>
 
 	<nav in:fly={{x: -300, duration: 500}} out:fly class='side-nav'>
-		<div>
+		<div class='menu-item-wrapper'>
 			<Link to='/'><p on:click={handleClick} class='menu-items'>about me</p></Link>
 			<Link to='education'><p on:click={handleClick} class='menu-items'>education</p></Link>
 			<Link to='experience'><p on:click={handleClick} class='menu-items'>experience</p></Link>
@@ -61,6 +61,11 @@
 		position: fixed;
 		grid-template-rows: repeat(3, 1fr);
 		z-index: 10;
+	}
+
+	.menu-item-wrapper {
+		display: grid;
+		place-items: center;
 	}
 
 	.menu-items {

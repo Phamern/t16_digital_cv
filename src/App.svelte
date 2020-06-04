@@ -13,19 +13,19 @@
 	let open = false;
 	let show = false;
 	
-	const hideMe = () => {
+	const toggleSideNav = () => {
 		if(window.innerWidth < 770) {
 			open = !open
 		}
 	}
 	
-	const showNav = () => {
+	const handleBurgerAnimation = () => {
 		show = !show
 	}
 
 	const handleClick = () => {
-		hideMe()
-		showNav()
+		toggleSideNav()
+		handleBurgerAnimation()
 	}
 	
 </script>

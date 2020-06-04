@@ -3,23 +3,22 @@
   import { data } from "../data/data.js";
   import Details from './Details.svelte'
 
-  let show = false;
-  let showText = 'Show';
+  // let show = false;
+  // let showText = 'Show';
 
-  const showDetail = (i) => {
-    if( i === show) {
-      show = false;
+  // const showDetail = (i) => {
+  //   if( i === show) {
+  //     show = false;
 
-    } else {
-      show = i
-    }
-  }
+  //   } else {
+  //     show = i
+  //   }
+  // }
 </script>
 
 
 <main in:fly={{ y: 200, duration: 1500, delay: 100}} out:fade={{duration: 10}} class="main-categories">
   <h1 class="title title-education">Education</h1>
-
   <section class="info-groups">
     {#each data.educationHistory as education, i}
         <div class="interaction-design">
